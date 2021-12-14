@@ -1,4 +1,4 @@
-A.**Installing and configuring kibana and elasticsearch with basic username and password authentication on Server1 (Kubuntu 20.04 LTS):**
+A. **Installing and configuring kibana and elasticsearch with basic username and password authentication on Server1 (Kubuntu 20.04 LTS):**
 
 	$ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
  	$ sudo apt-get install apt-transport-https
@@ -15,6 +15,7 @@ A.**Installing and configuring kibana and elasticsearch with basic username and 
 	$ sudo systemctl start kibana.service
 	$ sudo systemctl status kibana.service
 
+![image](https://user-images.githubusercontent.com/34814966/146047446-f16c0eb4-26cb-4ce5-95a5-80bd8a2f2dad.png)
 
   **installing and configuring metricbeat on Server 2 (Kali Linux on Raspberry Pi 4B):**
 
