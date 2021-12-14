@@ -1,19 +1,19 @@
 A.**Installing and configuring kibana and elasticsearch with basic username and password authentication on Server1 (Kubuntu 20.04 LTS):**
 
-		$ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
- 		$ sudo apt-get install apt-transport-https
- 		$ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list
- 		$ sudo apt-get update && sudo apt-get install elasticsearch
-         	$ sudo systemctl enable elasticsearch.service
-		$ sudo systemctl start elasticsearch.service
-		$ sudo systemctl status elasticsearch.service 
+	$ wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+ 	$ sudo apt-get install apt-transport-https
+ 	$ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list
+ 	$ sudo apt-get update && sudo apt-get install elasticsearch
+        $ sudo systemctl enable elasticsearch.service
+	$ sudo systemctl start elasticsearch.service
+	$ sudo systemctl status elasticsearch.service 
 					
-	![image](https://user-images.githubusercontent.com/34814966/146002609-95035a94-9a71-4712-a99e-3581e4a4ee7a.png)
-					
-		$ sudo apt-get update && sudo apt-get install kibana
-		$ sudo systemctl enable kibana.service
-		$ sudo systemctl start kibana.service
-		$ sudo systemctl status kibana.service
+![image](https://user-images.githubusercontent.com/34814966/146002609-95035a94-9a71-4712-a99e-3581e4a4ee7a.png)
+				
+	$ sudo apt-get update && sudo apt-get install kibana
+	$ sudo systemctl enable kibana.service
+	$ sudo systemctl start kibana.service
+	$ sudo systemctl status kibana.service
 
 
   **installing and configuring metricbeat on Server 2 (Kali Linux on Raspberry Pi 4B):**
