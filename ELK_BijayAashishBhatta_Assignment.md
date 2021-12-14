@@ -6,7 +6,7 @@ A.**Installing and configuring kibana and elasticsearch with basic username and 
 
 
 
-  **Collecting metric from following sources in server1 and sending them to elasticsearch. Storing them in an index named "server1-metrics". 
+  **Collecting metric from following sources in server1 and sending them to elasticsearch. Storing them in an index named "server1-metrics" - 
           a. Memory usage 
           b. Disk usage 
           c. Load average :**
@@ -14,13 +14,13 @@ A.**Installing and configuring kibana and elasticsearch with basic username and 
 
   
   
-1. **Creating a dashboard in kibana and generate visual report(line graph) for Memory usage and load average of server1 with relation to time: **
+1. **Creating a dashboard in kibana and generate visual report(line graph) for Memory usage and load average of server1 with relation to time:**
 
 
 
 2. **Generating alerts through kibana system for following thresholds - 
           a. when memory usage > 80% for last 2 minutes send alert to a slack channel 
           b. When Disk usage > 70% send alert to a slack channel 
-          c. When load average > 1 for last 2 minutes send alert to a slack channel :**
+          c. When load average > 1 for last 2 minutes send alert to a slack channel:**
           
         
