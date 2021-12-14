@@ -18,7 +18,10 @@ A. **Installing and configuring kibana and elasticsearch with basic username and
 ![image](https://user-images.githubusercontent.com/34814966/146047446-f16c0eb4-26cb-4ce5-95a5-80bd8a2f2dad.png)
 
   **installing and configuring metricbeat on Server 2 (Kali Linux on Raspberry Pi 4B):**
-
+	
+	$ wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.16.1-arm64.deb
+   	$ sudo dpkg -i metricbeat-7.16.1-arm64.deb
+	$ 
 
 
   **Collecting metric from following sources in server1 and sending them to elasticsearch. Storing them in an index named "server1-metrics" - 
