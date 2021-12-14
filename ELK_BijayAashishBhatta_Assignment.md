@@ -4,7 +4,7 @@ A.**Installing and configuring kibana and elasticsearch with basic username and 
  		$ sudo apt-get install apt-transport-https
  		$ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list
  		$ sudo apt-get update && sudo apt-get install elasticsearch
-         $ sudo systemctl enable elasticsearch.service
+         	$ sudo systemctl enable elasticsearch.service
 		$ sudo systemctl start elasticsearch.service
 		$ sudo systemctl status elasticsearch.service 
 					
