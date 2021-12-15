@@ -10,14 +10,24 @@ A. **Installing and configuring kibana and elasticsearch with basic username and
 
 ![image](https://user-images.githubusercontent.com/34814966/146120065-bb926ed9-4d2d-4ee1-bd18-56d88ab55d03.png)
 
-	$ sudo ./usr/share/elasticsearch/bin/elasticsearch-setup-passwords interactive
-        $ sudo systemctl enable elasticsearch.service
+	$ cd /usr/share/elasticsearch/bin/
+	$ sudo ./elasticsearch-setup-passwords interactive
+	
+![image](https://user-images.githubusercontent.com/34814966/146123183-4339b342-3c2e-48c9-a489-dfa5a82ec7c2.png)
+
+	$ sudo systemctl enable elasticsearch.service
 	$ sudo systemctl start elasticsearch.service
 	$ sudo systemctl status elasticsearch.service 
 					
 ![image](https://user-images.githubusercontent.com/34814966/146002609-95035a94-9a71-4712-a99e-3581e4a4ee7a.png)
 				
 	$ sudo apt-get update && sudo apt-get install kibana
+	$ sudo vim /etc/kibana/kibana.yml
+	
+![image](https://user-images.githubusercontent.com/34814966/146124181-e12f4210-1dc5-4d56-a290-3e8f87f61985.png)
+
+![image](https://user-images.githubusercontent.com/34814966/146124747-2ed5d002-464c-4238-b1d2-eb356fe11f8d.png)
+
 	$ sudo systemctl enable kibana.service
 	$ sudo systemctl start kibana.service
 	$ sudo systemctl status kibana.service
