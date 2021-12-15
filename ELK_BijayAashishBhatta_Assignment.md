@@ -34,11 +34,25 @@ A. **Installing and configuring kibana and elasticsearch with basic username and
 
 ![image](https://user-images.githubusercontent.com/34814966/146047446-f16c0eb4-26cb-4ce5-95a5-80bd8a2f2dad.png)
 
-  **installing and configuring metricbeat on Server 2 (Kali Linux on Raspberry Pi 4B):**
+  **Installing and configuring metricbeat on Server 2 (Kali Linux on Raspberry Pi 4B):**
 	
 	$ wget https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.16.1-arm64.deb
    	$ sudo dpkg -i metricbeat-7.16.1-arm64.deb
-	$ 
+	$ sudo vim /etc/metricbeat/metricbeat.yml
+
+![image](https://user-images.githubusercontent.com/34814966/146139088-09dbb2bc-cf74-49a2-80ca-6aa2cfec081a.png)
+
+	$ sudo systemctl enable metricbeat.service
+	$ sudo systemctl start metricbeat.service 
+	$ sudo systemctl status metricbeat.service 
+	
+![image](https://user-images.githubusercontent.com/34814966/146139429-704f40ac-17cf-4487-961c-60e22c5af13e.png)
+
+	$ sudo metricbeat setup --template -E 'output.elasticsearch.hosts=["192.168.100.66:9200"]'
+	$ sudo metricbeat setup -e -E output.elasticsearch.hosts=['192.168.100.66:9200'] -E setup.kibana.host=192.168.100.66:5601
+
+![image](https://user-images.githubusercontent.com/34814966/146141272-9f634611-28e1-47cb-9039-ad4ffd0b1dbb.png)
+
 
 
   **Collecting metric from following sources in server1 and sending them to elasticsearch. Storing them in an index named "server1-metrics" - 
