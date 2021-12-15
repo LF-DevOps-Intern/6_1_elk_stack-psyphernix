@@ -75,5 +75,8 @@ A. **Installing and configuring kibana and elasticsearch with basic username and
           - When Disk usage > 70% send alert to a slack channel 
           - When load average > 1 for last 2 minutes send alert to a slack channel:**
  
- 
-        
+ ![image](https://user-images.githubusercontent.com/34814966/146164403-9e035519-e036-4fa7-9d8c-f3a706ddae99.png)
+
+![image](https://user-images.githubusercontent.com/34814966/146191171-46744aa4-a7dd-480e-adb4-42a87c6ac927.png)
+
+![image](https://user-images.githubusercontent.com/34814966/146191954-7e7c45c3-b714-4cd2-8157-d95f5253ee8d.png)
