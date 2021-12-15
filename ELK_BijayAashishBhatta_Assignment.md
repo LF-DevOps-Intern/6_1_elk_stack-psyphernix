@@ -68,11 +68,12 @@ A. **Installing and configuring kibana and elasticsearch with basic username and
   
 1. **Creating a dashboard in kibana and generate visual report(line graph) for Memory usage and load average of server1 with relation to time:**
 
-
+![image](https://user-images.githubusercontent.com/34814966/146160141-7a409ac6-bc2c-423b-81ae-183db0b077bd.png)
 
 2. **Generating alerts through kibana system for following thresholds - 
           - when memory usage > 80% for last 2 minutes send alert to a slack channel 
           - When Disk usage > 70% send alert to a slack channel 
           - When load average > 1 for last 2 minutes send alert to a slack channel:**
-          
+ 
+ 
         
