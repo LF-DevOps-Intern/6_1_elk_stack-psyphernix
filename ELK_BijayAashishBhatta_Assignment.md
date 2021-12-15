@@ -53,13 +53,16 @@ A. **Installing and configuring kibana and elasticsearch with basic username and
 
 ![image](https://user-images.githubusercontent.com/34814966/146141272-9f634611-28e1-47cb-9039-ad4ffd0b1dbb.png)
 
+  **Collecting metric from following sources in server1 and sending them to elasticsearch. Storing them in an index named "kali-rpi4"  
+          - Memory usage 
+          - Disk usage 
+          - Load average :**
 
+	$ sudo vim /etc/metricbeat/metricbeat.yml
+	
+![image](https://user-images.githubusercontent.com/34814966/146144672-c0155ef8-5366-47a8-934e-c41ae3f3281a.png)
 
-  **Collecting metric from following sources in server1 and sending them to elasticsearch. Storing them in an index named "server1-metrics" - 
-          a. Memory usage 
-          b. Disk usage 
-          c. Load average :**
-
+![image](https://user-images.githubusercontent.com/34814966/146151003-49d03747-611f-48ad-9d43-21a304cf9317.png)
 
   
   
@@ -68,8 +71,8 @@ A. **Installing and configuring kibana and elasticsearch with basic username and
 
 
 2. **Generating alerts through kibana system for following thresholds - 
-          a. when memory usage > 80% for last 2 minutes send alert to a slack channel 
-          b. When Disk usage > 70% send alert to a slack channel 
-          c. When load average > 1 for last 2 minutes send alert to a slack channel:**
+          - when memory usage > 80% for last 2 minutes send alert to a slack channel 
+          - When Disk usage > 70% send alert to a slack channel 
+          - When load average > 1 for last 2 minutes send alert to a slack channel:**
           
         
